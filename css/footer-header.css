@@ -1,0 +1,150 @@
+/* This is the CSS for both Header & Footer for better organization */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F2C0B7;
+    color: #fff;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+.logo img {
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.shopping-cart {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.shopping-cart a {
+    color: black;
+    transition: all 2s;
+    justify-content: baseline;
+}
+
+.shopping-cart a:hover {
+    color: #F6E6CB;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Made Tommy Regular;
+    font-size: 2rem;
+}
+
+.menu li {
+    margin: 0 30px;
+    justify-content: space-evenly;
+}
+
+.menu li a {
+    color: #6D8E66;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.menu li a:hover {
+    color: #F6E6CB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s;
+
+}
+
+.hamburger {
+    display: none;
+    background-color: #6D8E66;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 15%;
+}
+
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 0;
+    padding-top: 3px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/hero-banner.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-text h1 {
+    padding-top: 250px;
+}
+
+.hero-text p {
+    text-align: center;
+    font-family: Made Tommy Regular;
+    font-size: 2rem;
+    color: grey;
+}
+
+.hero-container input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border: none;
+
+}
+
+/* THIS MEDIA QUERY CHANGES THE NAVIGATION INTO A HAMBURGER MENU IN MOBILE VERSION */
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger:hover .bar {
+        background-color: #b5d1b1;
+    }
+
+    .navbar.responsive .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar.responsive .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
