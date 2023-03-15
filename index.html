@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
+
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/8c7206a334.js" crossorigin="anonymous"></script>
 
@@ -22,56 +24,79 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo">
+            <figure class="logo">
+                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo" id="#main-title">
+
+                <!-- Shopping Cart Icon -->
+                <div class="shopping-cart">
+                    <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </figure>
+
+            <!-- DESKTOP NAVIGATION  -->
+            <ul class="menu">
                 <li><a href="#main-title">Home</a></li>
                 <li><a target="_blank" href="about.html">About Us</a></li>
                 <li><a target="_blank" href="contact.html">Contact Us</a></li>
             </ul>
+
+            <!-- Adds a hamburger menu to the mobile breakpoint-->
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
-
-        <h1 id="main-title">Happy Cow Bakery</h1>
-
-        <figure>
-            <img src="images/hero-banner.jpg" alt="hero banner">
-        </figure>
-
-        <input type="text" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass"></i>
 
     </header>
 
+    <!-- This is the hero banner -->
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1 id="main-title">Happy Cow Bakery</h1>
+            <p>Your Bakery of Trust...</p>
+            <input type="search" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- This is where the main content of the page goes -->
     <main>
 
-        <h2>Delicious Treats</h2>
+        <h2 class="treats">Our Happy Treats</h2>
 
-        <section>
-            <div class="cards">
+        <section class="cards-container">
+            <div class="cards alfajores">
+                <h3>Delicious Alfajores</h3>
                 <img src="images/pink-treat.jpg" alt="pink-treat">
-                <h4>Delicious Alfajores</h4>
-                <button type="button">Read More</button>
+                <p> Indulge in the rich and satisfying flavor of our vegan alfajores! Made with only the finest ingredients, our delicate and crumbly cookies are sandwiched together with a smooth and creamy vegan dulce de leche filling. These delicious treats are 100% plant-based and free from animal products, making them the perfect guilt-free indulgence for any sweet tooth. </p>
             </div>
 
-            <div class="cards">
+            <div class="cards croaissant">
+                <h3>Chocolate Croaissants</h3>
                 <img src="images/chocolate-croaissant.jpg" alt="chocolate-croaissant">
-                <h4>Chocolate Croaissant</h4>
-                <button type="button">Read More</button>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iste cum qui quidem minima,
+                    placeat ad suscipit mollitia repellat tempora quod, aliquid expedita ducimus reiciendis repudiandae
+                    quasi explicabo laborum quam.</p>
             </div>
 
-            <div class="cards">
+            <div class="cards donut">
+                <h3>Amazing Donut</h3>
                 <img src="images/donut.jpg" alt="pink-donut">
-                <h4>Amazing Donut</h4>
-                <button type="button">Read More</button>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iste cum qui quidem minima,
+                    placeat ad suscipit mollitia repellat tempora quod, aliquid expedita ducimus reiciendis repudiandae
+                    quasi explicabo laborum quam.</p>
             </div>
 
+            <br>
+            <br>
             <hr>
+
         </section>
 
-        <section>
-            <div class="cta-heading">
-                <h2>Be Part of This Family</h2>
-            </div>
+        <section class="call-to-action">
 
-            <!-- Background image of the team for CTA -->
+            <h2>Be Part of This Family</h2>
+
             <p>Get to know us better! Learn about our company's mission, history, and values. Find out how we can help
                 you achieve your goals and make a positive impact on your business. Contact us today to get started.</p>
             <button type="button">Contact Us</button>
