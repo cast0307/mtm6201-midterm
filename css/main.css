@@ -420,7 +420,7 @@ footer p {
 
 }
 
-/*  */
+/* This adds media queries for Desktop Version */
 @media (min-width: 768px) {
     .cards .image-size {
         width: 40%;
