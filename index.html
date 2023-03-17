@@ -5,19 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/8c7206a334.js" crossorigin="anonymous"></script>
 
     <!-- Own CSS Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer-header.css">
-
-    <!-- This styles the header and footer for all of the pages -->
-    <link rel="stylesheet" href="css/footer-header.css">
 
     <title>Home</title>
 </head>
@@ -25,19 +17,20 @@
 <body>
     <header>
         <nav>
-            <figure class="logo">
-                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo" id="#main-title">
 
-                <!-- Shopping Cart Icon -->
-                <div class="shopping-cart">
-                    <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+            <!-- Shopping Cart Icon --> 
+            <div class="shopping-cart">
+                <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <figure>
+                <img src="images/Happy-Cow-Bakery-Logo.png" alt="Happy Cow Bakery Logo" id="#main-title">
             </figure>
 
             <!-- DESKTOP NAVIGATION  -->
             <ul class="menu">
-                <li><a href="#main-title">Home</a></li>
-                <li><a target="_blank" href="about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a target="_blank" href="#main-title">About Us</a></li>
                 <li><a target="_blank" href="contact.html">Contact Us</a></li>
             </ul>
 
@@ -61,51 +54,49 @@
     </div>
 
     <!-- This is where the main content of the page goes -->
-    <main>
+    <main role="main">
 
         <h2 class="treats">Our Happy Treats</h2>
 
         <section class="cards-container">
             <div class="cards alfajores">
                 <h3>Delicious Alfajores</h3>
-                <img src="images/pink-treat.jpg" alt="pink-treat">
-                <p> Indulge in the rich and satisfying flavor of our vegan alfajores! Made with only the finest ingredients, our delicate and crumbly cookies are sandwiched together with a smooth and creamy vegan dulce de leche filling. These delicious treats are 100% plant-based and free from animal products, making them the perfect guilt-free indulgence for any sweet tooth. </p>
+                <img src="images/pink-treat.jpg" alt="Delicious Alfajores" class="image-size">
+                <p><em> Indulge your sweet palate with our mouthwatering alfajores, hand-made with love in our vegan
+                        bakery.</em></p>
             </div>
 
             <div class="cards croaissant">
                 <h3>Chocolate Croaissants</h3>
-                <img src="images/chocolate-croaissant.jpg" alt="chocolate-croaissant">
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iste cum qui quidem minima,
-                    placeat ad suscipit mollitia repellat tempora quod, aliquid expedita ducimus reiciendis repudiandae
-                    quasi explicabo laborum quam.</p>
+                <img src="images/chocolate-croaissant.jpg" alt="Chocolate Croaissants" class="image-size">
+                <p><em>Satisfy your chocolate cravings with our irresistible chocolate croissants, made with premium
+                        vegan
+                        ingredients.</em></p>
             </div>
 
             <div class="cards donut">
-                <h3>Amazing Donut</h3>
-                <img src="images/donut.jpg" alt="pink-donut">
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iste cum qui quidem minima,
-                    placeat ad suscipit mollitia repellat tempora quod, aliquid expedita ducimus reiciendis repudiandae
-                    quasi explicabo laborum quam.</p>
+                <h3>Flavorful Donuts</h3>
+                <img src="images/donut.jpg" alt="pink-donut" class="image-size">
+                <p><em>Experience a burst of flavor with every bite of our expertly crafted donuts!</em></p>
             </div>
 
             <br>
             <br>
-            <hr>
 
         </section>
 
-        <section class="call-to-action">
+        <section class="cta-banner">
+            <div class="cta-heading">
+                <h2>Want to be part of this family?</h2>
 
-            <h2>Be Part of This Family</h2>
+                <p>Get to know us better! Learn about our company's mission, history, and values. Find out how we can
+                    help
+                    you achieve your goals and make a positive impact on your business. Contact us today to get started.
+                </p>
+            </div>
 
-            <p>Get to know us better! Learn about our company's mission, history, and values. Find out how we can help
-                you achieve your goals and make a positive impact on your business. Contact us today to get started.</p>
-            <button type="button">Contact Us</button>
-
+            <a href="/contact.html"><button type="button">Contact Us</button><i class="arrow right"></i></a>
             <br>
-            <hr>
-
-            <img src="images/st-patrick-treats.jpg" alt="holiday-treat">
         </section>
 
     </main>
@@ -113,17 +104,18 @@
     <br>
 
     <footer>
-        <div><a href="#main-title">Back to Top</a></div>
-
         <p>&copy; Happy Cow Bakery, 2023</p>
-        <p>613-888-5555</p>
+        <p>+1 613-888-5555</p>
         <div class="footer-icons">
-            <div><i class="fa-brands fa-instagram"></i></div>
-            <div><i class="fa-brands fa-facebook"></i></div>
-            <div><i class="fa-brands fa-tiktok"></i></div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
         </div>
+
+        <!-- BACK TO TOP BUTTON  -->
+        <a href="#main-title" class="back2top">Back to Top</a>
     </footer>
 
 </body>
 
-</html>
+</html

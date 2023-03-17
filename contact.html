@@ -11,30 +11,46 @@
 
     <!-- Own Css Stylesheet -->
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer-header.css">
     <title>Contact Us</title>
 </head>
 
 <body>
-
     <header>
         <nav>
-            <ul>
-                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo">
-                <li><a target="_blank" href="index.html">Home</a></li>
+            <figure class="logo">
+                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo" id="#main-title">
+
+                <!-- Shopping Cart Icon -->
+                <div class="shopping-cart">
+                    <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </figure>
+
+            <!-- DESKTOP NAVIGATION  -->
+            <ul class="menu">
+                <li><a href="#main-title">Home</a></li>
                 <li><a target="_blank" href="about.html">About Us</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a target="_blank" href="contact.html">Contact Us</a></li>
             </ul>
+
+            <!-- Adds a hamburger menu to the mobile breakpoint-->
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
 
-        <h1 id="contact-us">Contact Us</h1>
-
-        <figure>
-            <img src="images/bakery.jpeg" alt="contact us banner">
-        </figure>
-
-        <button type="button">Read More</button>
-
     </header>
+
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1 id="main-title">About Us</h1>
+            <p>Your Bakery of Trust...</p>
+            <input type="search" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
 
     <main>
 
@@ -81,7 +97,7 @@
         </section>
 
         <section>
-            <form>
+            <form role="form">
                 <label for="first-name">First name:</label>
                 <input type="text" id="first-name" name="first-name" required>
 
@@ -111,16 +127,17 @@
 
 <br>
 
-<footer>
-    <div><a href="#contact-us">Back to Top</a></div>
+   <footer>
+        <p>&copy; Happy Cow Bakery, 2023</p>
+        <p>+1 613-888-5555</p>
+        <div class="footer-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
 
-    <p>&copy; Happy Cow Bakery, 2023</p>
-    <p>613-888-5555</p>
-    <div class="footer-icons">
-        <div><i class="fa-brands fa-instagram"></i></div>
-        <div><i class="fa-brands fa-facebook"></i></div>
-        <div><i class="fa-brands fa-tiktok"></i></div>
-    </div>
-</footer>
+        <!-- BACK TO TOP BUTTON  -->
+        <a href="contact.html" class="back2top">Back to Top</a>
+    </footer>
 
 </html>

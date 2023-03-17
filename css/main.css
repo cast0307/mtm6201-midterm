@@ -15,7 +15,7 @@
     src: url("/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf");
 }
 
-/* End of DaFont code*/
+/* End of fonts code*/
 
 
 /* DEFAULTS */
@@ -31,9 +31,15 @@ body {
     box-sizing: border-box;
 }
 
+hr {
+    border: 1rem dashed grey;
 
 
-img {
+}
+
+
+img,
+object {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -50,23 +56,154 @@ h1 {
     text-shadow: -8px 7px 2px #0a2b03;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F2C0B7;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Here starts the navigation style */
+
+.logo img {
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.shopping-cart {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2;
+}
+
+.shopping-cart a {
+    color: black;
+    transition: all 2s;
+    justify-content: baseline;
+}
+
+.shopping-cart a:hover {
+    color: #F6E6CB;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Made Tommy Regular;
+    font-size: 2rem;
+}
+
+.menu li {
+    margin: 0 30px;
+    justify-content: space-evenly;
+}
+
+.menu li a {
+    color: #6D8E66;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.menu li a:hover {
+    color: #F6E6CB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s;
+
+}
+
+.hamburger {
+    display: none;
+    background-color: #6D8E66;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 15%;
+}
+
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 0;
+    padding-top: 3px;
+}
+
+/* Hero Banner Style */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/hero-banner.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-text h1 {
+    padding-top: 4.6rem;
+}
+
+.hero-text p {
+    text-align: center;
+    font-family: Made Tommy Light;
+    font-size: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.hero-container input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+
+}
+
+.hero-container input::placeholder {
+    color: #6D8E66;
+}
+
+.hero-container input:hover {
+    background-color: #b5d1b1;
+}
+
+/* Here goes the styling for the Main Content */
 main {
     width: 100%;
-    margin: -9rem auto 8px auto;
+    margin: -4rem auto 8px auto;
     text-align: center;
     background: rgb(61, 89, 56);
 }
 
-main h2 {
+main .treats {
     background-color: #F6E6CB;
-    width: 50%;
     height: 100%;
+    width: 70%;
     padding: 40px 40px;
-    margin: -30px auto;
+    margin: -8rem auto 0 auto;
     font-family: BakeryRoastDemoRegular;
     color: #6D8E66;
     font-size: 4rem;
+    border-radius: 1.5rem;
 }
+
+/* Style for section "Cards" */
 
 .cards {
     width: 100%;
@@ -78,8 +215,8 @@ main h2 {
 }
 
 .cards img {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 .cards h3 {
@@ -88,20 +225,164 @@ main h2 {
     color: #fff;
 }
 
+.cards-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .cards p {
     flex-wrap: wrap;
+    font-size: 1rem;
+    color: black;
+    background-color: #F2C0B7;
+    margin-top: -1.5rem;
+    padding: 2rem 6rem;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
-.donut {
+.alfajores {
+    /* width: 20%; */
+}
 
-    margin-bottom: 50px;
+.croaissant {}
+
+.donut {}
+
+.donut p {
+    padding-bottom: 3rem;
+    margin-bottom: -1.6rem;
+    overflow: hidden;
+}
+
+/* This adds stly to the call to action banner */
+
+.cta-banner {
+    background-image: url(/images/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    flex-wrap: wrap;
+    margin: -1.9rem auto;
+    padding-top: 3rem;
+}
+
+.cta-heading {
+    font-family: Made Tommy Regular;
+    margin-bottom: 2rem;
+    margin: -2rem 1rem;
+    height: auto;
+    font-size: 1.2rem;
 
 }
+
+.cta-heading p {
+    font-size: 1rem;
+
+
+}
+
+.cta-banner button {
+    padding: 1rem 3rem;
+    margin-top: 15rem;
+    background-color: #F6E6CB;
+    font-family: Made Tommy Regular;
+    border: none;
+    font-weight: 200;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* Adds an arrow icon next to the contact us button */
+
+.arrow {
+    border: solid #F6E6CB;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.fa-solid fa-magnifying-glass {
+    padding-right: 30px;
+
+}
+
+/* HERE STARTS THE FOOTER STYLE */
 
 footer {
     background-color: #F2C0B7;
     display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem auto;
+    background-color: #F2C0B7;
+    font-size: 3rem;
 }
+
+footer p {
+
+    justify-content: center;
+    text-align: center;
+    margin: 2rem auto 1.5rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.back2top {
+    text-decoration: none;
+    margin: 3rem auto 0 auto;
+    background-color: black;
+    color: #b5d1b1;
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    font-family: Made Tommy Light;
+    font-weight: 600;
+}
+
+.back2top:hover {
+    background-color: #6D8E66;
+    transition: all 1s;
+    color: #F2C0B7;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+}
+
+.footer-icons i {
+    margin: 1rem auto;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.footer-icons i:hover {
+    color: #6D8E66;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    transition: ease-out 1s;
+
+
+}
+
 
 /* THIS MEDIA QUERY CHANGES THE NAVIGATION INTO A HAMBURGER MENU IN MOBILE VERSION */
 
@@ -135,6 +416,14 @@ footer {
     .navbar.responsive .menu li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+}
+
+/*  */
+@media (min-width: 768px) {
+    .cards .image-size {
+        width: 40%;
     }
 
 }
