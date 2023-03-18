@@ -31,13 +31,6 @@ body {
     box-sizing: border-box;
 }
 
-hr {
-    border: 1rem dashed grey;
-
-
-}
-
-
 img, object {
     max-width: 100%;
     height: auto;
@@ -57,7 +50,7 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     background-color: #F2C0B7;
@@ -70,27 +63,27 @@ header {
 
 /* Here starts the navigation style */
 
-.logo img {
-    height: 100px;
-    justify-content: space-between;
-    flex-direction: row;
+.logo {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin-right: 60px;
 }
 
 .shopping-cart {
-    font-size: 60px;
+    font-size: 68px;
     text-align: center;
     text-decoration: none;
-    margin-left: 2;
+    padding-right: 20px;
 }
 
 .shopping-cart a {
-    color: black;
+    color: #6D8E66;
     transition: all 2s;
-    justify-content: baseline;
 }
 
 .shopping-cart a:hover {
-    color: #F6E6CB;
+    color: black;
 }
 
 .menu {
@@ -184,18 +177,16 @@ header {
 
 /* Here goes the styling for the Main Content */
 main {
+    padding-top: 4rem;
     width: 100%;
-    margin: -4rem auto 8px auto;
     text-align: center;
-    background: rgb(61, 89, 56);
+    background: #6D8E66
 }
 
 main .treats {
     background-color: #F6E6CB;
-    height: 100%;
+    margin: 0 auto;
     width: 70%;
-    padding: 40px 40px;
-    margin: -8rem auto 0 auto;
     font-family: BakeryRoastDemoRegular;
     color: #6D8E66;
     font-size: 4rem;
