@@ -392,7 +392,7 @@ footer p {
         flex-direction: column;
     }
 
-    .navbar.responsive .menu li {
+    .menu li {
         margin-right: 0;
         margin-bottom: 10px;
     }
