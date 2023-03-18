@@ -1,0 +1,265 @@
+p {
+    font-family: Made Tommy Light;
+}
+
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1rem dashed grey;
+
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+
+
+h1 {
+    font-family: BakeryRoastDemoRegular;
+    color: #6D8E66;
+    margin: 1rem 2rem auto;
+    text-align: center;
+    font-size: 6rem;
+    text-shadow: -8px 7px 2px #0a2b03;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F2C0B7;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Here starts the navigation style */
+
+.logo img {
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.shopping-cart {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2;
+}
+
+.shopping-cart a {
+    color: black;
+    transition: all 2s;
+    justify-content: baseline;
+}
+
+.shopping-cart a:hover {
+    color: #F6E6CB;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Made Tommy Regular;
+    font-size: 2rem;
+}
+
+.menu li {
+    margin: 0 30px;
+    justify-content: space-evenly;
+}
+
+.menu li a {
+    color: #6D8E66;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.menu li a:hover {
+    color: #F6E6CB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s;
+
+}
+
+.hamburger {
+    display: none;
+    background-color: #6D8E66;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 15%;
+}
+
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 0;
+    padding-top: 3px;
+}
+
+/* Hero Banner Style */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/hero-banner.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-text h1 {
+    padding-top: 4.6rem;
+}
+
+.hero-text p {
+    text-align: center;
+    font-family: Made Tommy Light;
+    font-size: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.hero-container input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+
+}
+
+.hero-container input::placeholder {
+    color: #6D8E66;
+}
+
+.hero-container input:hover {
+    background-color: #b5d1b1;
+}
+
+/* HERE STARTS THE FOOTER STYLE */
+
+footer {
+    background-color: #F2C0B7;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem auto;
+    background-color: #F2C0B7;
+    font-size: 3rem;
+}
+
+footer p {
+
+    justify-content: center;
+    text-align: center;
+    margin: 2rem auto 1.5rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.back2top {
+    text-decoration: none;
+    margin: 3rem auto 0 auto;
+    background-color: black;
+    color: #b5d1b1;
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+    font-family: Made Tommy Light;
+    font-weight: 600;
+}
+
+.back2top:hover {
+    background-color: #6D8E66;
+    transition: all 1s;
+    color: #F2C0B7;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+}
+
+.footer-icons i {
+    margin: 1rem auto;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.footer-icons i:hover {
+    color: #6D8E66;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    transition: ease-out 1s;
+
+
+}
+
+
+/* THIS MEDIA QUERY CHANGES THE NAVIGATION INTO A HAMBURGER MENU IN MOBILE VERSION */
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger:hover .bar {
+        background-color: #b5d1b1;
+    }
+
+    .navbar.responsive .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar.responsive .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
