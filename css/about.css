@@ -57,6 +57,13 @@ header {
     width: 100%;
 }
 
+main {
+    margin-top: 2rem;
+    background-color: #b5d1b177;
+    padding-bottom: 2rem;
+    border-radius: 5px 6rem 5px 5px ;
+}
+
 .skip-link-nav {
     margin-bottom: 2rem;
     font-family: sans-serif;
@@ -324,12 +331,12 @@ main h2 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: black;
     transition: background-color 0.3s ease;
 }
 
 .navigation label:hover {
-    background-color: #555;
+    background-color: #6D8E66;
 }
 
 .slides input[type="radio"] {
@@ -387,7 +394,8 @@ main h2 {
 .locally-sourced button {
     padding: 10px 10px;
     width: 150px;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     border-radius: 1.5rem;
     font-size: 0.9rem;
     border: none;
@@ -413,10 +421,8 @@ main h2 {
 }
 
 .locally-sourced:nth-child(2) {
-    font-size: 4rem;
+    font-size: 5rem;
     color:#F2C0B7;
-    text-align: right;
-    margin-right: 2rem;
 }
 
 
