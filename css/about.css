@@ -1,28 +1,39 @@
-p {
-    font-family: Made Tommy Light;
+/*Fonts from DaFont*/
+
+@font-face {
+    font-family: "BakeryRoastDemoRegular";
+    src: url("/fonts/BakeryRoastDemoRegular.ttf");
 }
 
+@font-face {
+    font-family: "Made Tommy Light";
+    src: url("/fonts/MADE\ TOMMY\ Light_PERSONAL\ USE.otf");
+}
 
-body {
+@font-face {
+    font-family: "Made Tommy Regular";
+    src: url("/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf");
+}
+
+/* End of fonts code*/
+
+html {
+    text-align: center;
+    scroll-behavior: smooth;
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box;
 }
 
-hr {
-    border: 1rem dashed grey;
-
-
+p {
+    font-family: Made Tommy Light;
 }
-
 
 img {
     max-width: 100%;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
 }
-
-
 
 h1 {
     font-family: BakeryRoastDemoRegular;
@@ -35,7 +46,7 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     background-color: #F2C0B7;
@@ -46,29 +57,86 @@ header {
     width: 100%;
 }
 
+.skip-link-nav {
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position: absolute;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-200%);
+}
+
+.skip-link-nav:focus {
+    transform: translateY(0%);
+}
+
+.skip-link-main {
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position: absolute;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-120%);
+}
+
+.skip-link-main:focus {
+    transform: translateY(0%);
+}
+
+.skip-link-foot {
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position: absolute;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-120%);
+}
+
+.skip-link-foot:focus {
+    transform: translateY(0%);
+}
+
 /* Here starts the navigation style */
 
-.logo img {
-    height: 100px;
-    justify-content: space-between;
-    flex-direction: row;
+.logo {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin-right: 60px;
 }
 
 .shopping-cart {
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     text-decoration: none;
-    margin-left: 2;
+    padding-top: 10px;
+    padding-right: 40px;
 }
 
 .shopping-cart a {
-    color: black;
+    color: #6D8E66;
     transition: all 2s;
-    justify-content: baseline;
 }
 
 .shopping-cart a:hover {
-    color: #F6E6CB;
+    color: black;
 }
 
 .menu {
@@ -121,7 +189,7 @@ header {
 .hero-container {
     display: flex;
     flex-direction: column;
-    background-image: url("/images/hero-banner.jpg");
+    background-image: url("/images/bakery.jpeg");
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -129,8 +197,13 @@ header {
     width: 100%;
 }
 
+.hero-text {
+    display: inline;
+}
+
 .hero-text h1 {
-    padding-top: 4.6rem;
+    padding-top: 9rem;
+    color: #F2C0B7;
 }
 
 .hero-text p {
@@ -141,10 +214,27 @@ header {
     padding-top: 1.5rem;
 }
 
+.hero-text button {
+    padding: 10px 10px;
+    width: 150px;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #F2C0B7;
+    font-family: Made Tommy Regular;
+    transition: all ease-in-out 0.6s;
+}
+
+.hero-text button:hover {
+    background-color: #ccc;
+    transition: all ease-in-out 0.6s;
+}
+
 .hero-container input {
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 8rem auto;
     width: 50%;
     height: 30px;
     border: 2px solid black;
@@ -159,6 +249,176 @@ header {
 .hero-container input:hover {
     background-color: #b5d1b1;
 }
+
+/* This is the main article style (Jerry Grant) */
+
+main {
+    margin-bottom: 5rem;
+}
+
+main h2 {
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    font-family: BakeryRoastDemoRegular;
+
+}
+
+.jerry-grant img {
+    max-height: 100vh;
+}
+
+.jerry-grant h2 {
+    font-family: BakeryRoastDemoRegular;
+    font-size: 4rem;
+}
+
+.jerry-grant p {
+    width: 65%;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+.jerry-grant .emphasize {
+    font-size: 25px;
+
+}
+
+/* THIS IS THE STYLE FOR THE SLIDESHOW SECTION */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation label {
+    cursor: pointer;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.navigation label:hover {
+    background-color: #555;
+}
+
+.slides input[type="radio"] {
+    display: none;
+}
+
+.slides input[type="radio"]:checked+.slide {
+    scroll-snap-align: center;
+}
+
+.slides input[type="radio"]:checked+.slide+input[type="radio"]+.slide {
+    scroll-snap-align: end;
+}
+
+
+/*STYLING FOR OUR TEAM SECTION*/
+
+.member {
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.our-team h2 {
+    font-size: 4rem;
+
+}
+
+.our-team p {
+    width: 65%;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+/* OUR VALUES SECTION STYLING */
+
+.values h3 {
+    margin: 4rem auto;
+    font-size: 4rem;
+    font-family: BakeryRoastDemoRegular;
+}
+
+.our-team .emphasize {
+    font-size: 1.5rem;
+}
+
+.values .icon {
+    font-size: 5rem;
+}
+
+/* LOCALLY SOURCED BUTTON GOES HERE */
+
+.locally-sourced button {
+    padding: 10px 10px;
+    width: 150px;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #F2C0B7;
+    font-family: Made Tommy Regular;
+    transition: all ease-in-out 0.6s;
+
+}
+
+.locally-sourced button:hover {
+    background-color: #ccc;
+    transition: all ease-in-out 0.6s;
+}
+
+.locally-sourced p {
+    margin: 2rem auto;
+}
+
+.locally-sourced:nth-child(1) {
+    font-size: 3rem;
+    color:#555;
+
+}
+
+.locally-sourced:nth-child(2) {
+    font-size: 4rem;
+    color:#F2C0B7;
+    text-align: right;
+    margin-right: 2rem;
+}
+
 
 /* HERE STARTS THE FOOTER STYLE */
 
@@ -191,14 +451,16 @@ footer p {
     color: #b5d1b1;
     padding: 20px 20px;
     font-size: 0.9rem;
+    margin-bottom: 2rem;
     border-radius: 1.5rem;
     font-family: Made Tommy Light;
     font-weight: 600;
+    transition: all ease-in-out 1s;
 }
 
 .back2top:hover {
     background-color: #6D8E66;
-    transition: all 1s;
+    transition: all ease-in-out 1s;
     color: #F2C0B7;
 }
 
@@ -226,7 +488,6 @@ footer p {
 
 
 }
-
 
 /* THIS MEDIA QUERY CHANGES THE NAVIGATION INTO A HAMBURGER MENU IN MOBILE VERSION */
 

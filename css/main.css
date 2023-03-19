@@ -20,15 +20,16 @@
 
 /* DEFAULTS */
 
-p {
-    font-family: Made Tommy Light;
-}
-
-
-body {
+html {
+    text-align: center;
+    scroll-behavior: smooth;
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+p {
+    font-family: Made Tommy Light;
 }
 
 img, object {
@@ -61,6 +62,62 @@ header {
     width: 100%;
 }
 
+/* STYLING OF SKIP LINKS - This makes the skiplinks to be hidden from the website */
+
+.skip-link-nav {
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position:absolute; 
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-120%);
+}
+
+.skip-link-nav:focus {
+    transform: translateY(0%);
+}
+
+.skip-link-main {
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position:absolute; 
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-120%);
+}
+
+.skip-link-main:focus {
+    transform: translateY(0%);
+}
+
+.skip-link-foot {
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    position:absolute; 
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    left: 0.5rem;
+    transition: transform 500ms ease-in-out;
+    transform: translateY(-120%);
+}
+
+.skip-link-foot:focus {
+    transform: translateY(0%);
+}
+
 /* Here starts the navigation style */
 
 .logo {
@@ -71,10 +128,11 @@ header {
 }
 
 .shopping-cart {
-    font-size: 68px;
+    font-size: 70px;
     text-align: center;
     text-decoration: none;
-    padding-right: 20px;
+    padding-top: 10px;
+    padding-right: 40px
 }
 
 .shopping-cart a {
@@ -156,6 +214,11 @@ header {
     padding-top: 1.5rem;
 }
 
+.hero-text button {
+    display: block;
+    margin: 0 auto;
+  }
+
 .hero-container input {
     display: block;
     text-align: center;
@@ -215,10 +278,6 @@ main .treats {
     color: #fff;
 }
 
-.cards-container {
-    
-}
-
 .cards p {
     flex-wrap: nowrap;
     font-size: 1rem;
@@ -273,6 +332,12 @@ main .treats {
     font-weight: 200;
     border-radius: 1.5rem;
     font-size: 1.3rem;
+    transition: all ease-in-out 0.6s;
+}
+
+.cta-banner button:hover {
+    background-color: #ccc;
+    transition: all ease-in-out 0.6s;
 }
 
 /* Adds an arrow icon next to the contact us button */

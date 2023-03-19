@@ -17,6 +17,11 @@
 
 <body>
     <header>
+
+        <a href="#navbar" class="skip-link-nav">Navbar</a>
+        <a href="#main-content" class="skip-link-main">Main-Content</a>
+        <a href="#footer" class="skip-link-foot">Footer</a>
+
         <nav>
             <figure class="logo">
                 <img src="images/Happy-Cow-Bakery-Logo.png" alt="Happy Cow Bakery Logo" id="#main-title">
@@ -42,114 +47,99 @@
             </div>
         </nav>
 
-    </header>
-
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1 id="main-title">About Us</h1>
-            <p>Your Bakery of Trust...</p>
-            <input type="search" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- This is the hero banner -->
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 id="main-title">About Us</h1>
+                <a href="#jerry"><button>Learn More</button></a>
+                <input type="search" placeholder="Search...">
+            </div>
         </div>
-    </div>
+
+    </header>
 
     <main>
 
-        <article>
-            <h2>Jerry Grant</h2>
-            <figure>
-                <img src="images/baker-1.jpg" alt="Main Baker">
-            </figure>
+        <article class="jerry-grant">
+            <h2 id="jerry">Jerry Grant</h2>
+            <p>Meet <strong class="emphasize"> Jerry </strong>, the creative force behind Happy Cow Bakery. Jerry is a
+                passionate and experienced
+                baker with a talent for creating delicious vegan treats. He takes pride in using only the freshest
+                and highest quality ingredients, making sure that every item that comes out of his oven is not only
+                tasty but also nutritious.</p>
+            <img src="images/baker-1.jpg" alt="portrait of a baker laughing while preparing desserts">
 
-            <figcaption>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quasi consequuntur necessitatibus
-                    recusandae perferendis nemo totam quam! Dicta molestias quo delectus facere ullam, odit architecto,
-                    ad odio, pariatur corporis temporibus.</p>
-            </figcaption>
         </article>
 
-        <section>
+        <section class="our-team">
             <h2>Our Team</h2>
 
-            <div>
-                <img src="images/cook-1.jpg" alt="team member">
+            <p> At <strong class="emphasize"> Happy Cow Bakery </strong>, we have a team of dedicated and skilled
+                individuals who share the same passion for
+                baking and creating delectable vegan treats.</p>
+
+            <div class="team-members">
+                <img src="images/cook-1.jpg" alt="team member" class="member">
+
+                <img src="images/baker-2.jpg" alt="team member" class="member">
+
+                <img src="images/cook-2.jpg" alt="team member" class="member">
             </div>
 
-            <div>
-                <img src="images/baker-2.jpg" alt="team member">
-            </div>
-
-            <div>
-                <img src="images/cook-2.jpg" alt="team member">
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam in repudiandae asperiores
-                    odit, non qui earum officia excepturi incidunt, nam ex blanditiis tempore assumenda consectetur
-                    reiciendis soluta veniam? Exercitationem!</p>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="slideshow-container">
-                <div class="slideshow-slide">
-                    <img src="images/donut.jpg" alt="Slide 1">
+            <!-- SLIDESHOW  -->
+            <section class="slideshow-container">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <div class="slide"><img src="/images/vegan-treat.jpg"></div>
+                    <input type="radio" name="slide" id="slide2">
+                    <div class="slide"><img src="/images/veggie-toast.jpg"></div>
+                    <input type="radio" name="slide" id="slide3">
+                    <div class="slide"><img src="/images/black-cookie.jpg"></div>
                 </div>
 
-                <div class="slideshow-slide">
-                    <img src="images/veggie-toast.jpg" alt="Slide 2">
+                <div class="navigation">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
                 </div>
+            </section>
 
-                <div class="slideshow-slide">
-                    <img src="images/vegan-treat.jpg" alt="Slide 3">
-                </div>
+            <section class="values">
+                <h3>Our Values</h3>
+
+                <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="icon"><i class="fa-solid fa-people-carry-box"></i></div>
+
+                <br>
+
+                <p>At the heart of our values are <strong>Team Work</strong>,<strong> Empathy</strong>,
+                    <strong>Passion</strong>, and <strong>Client Satisfaction.</strong> We strive to deliver you the
+                    best at the lowest cost.</p>
+
+            </section>
+
+            <div class="locally-sourced">
+                <p class="locally-sourced">Locally</p>
+                <p class="locally-sourced">Sourced</p>
+                <a target="_blank" href="https://logicalharmony.net/100-pure-vegan-products-list/"><button type="text">100% Vegan</button></a>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="slideshow-nav">
-                <a class="prev" href="#">&#10094;</a>
-                <a class="next" href="#">&#10095;</a>
-            </div>
-        </section>
-
-        <section>
-            <h3>Values</h3>
-
-            <div><i class="fa-solid fa-people-group"></i></div>
-            <div><i class="fa-solid fa-heart"></i></div>
-            <div><i class="fa-solid fa-handshake"></i></div>
-            <div><i class="fa-solid fa-people-carry-box"></i></div>
-
-            <br>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti assumenda voluptate. Odio vel
-                dolorem, officia aut eaque aspernatur ad, laudantium dignissimos illum fugiat quidem totam quisquam
-                deserunt enim eum?</p>
-
-        </section>
-
-        <div>
-            <h3>Locally Sourced</h3>
-            <button type="text">100% Vegan</button>
-        </div>
 
     </main>
-
-    <br>
-
-    <footer>
-        <p>&copy; Happy Cow Bakery, 2023</p>
-        <p>+1 613-888-5555</p>
-        <div class="footer-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-tiktok"></i>
-        </div>
-
-        <!-- BACK TO TOP BUTTON  -->
-        <a href="#main-title" class="back2top">Back to Top</a>
-    </footer>
-
 </body>
+
+<footer>
+    <p>&copy; Happy Cow Bakery, 2023</p>
+    <p>+1 613-888-5555</p>
+    <div class="footer-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+
+    <!-- BACK TO TOP BUTTON  -->
+    <a href="#main-title" class="back2top">Back to Top</a>
+</footer>
 
 </html>

@@ -17,20 +17,25 @@
 
 <body>
     <header>
+
+        <a href="#navbar" class="skip-link-nav">Navbar</a>
+        <a href="#main-content" class="skip-link-main">Main-Content</a>
+        <a href="#footer" class="skip-link-foot">Footer</a>
+
         <nav>
             <figure class="logo">
-                <img src="images/Happy-Cow-Bakery-Logo.png" alt="logo" id="#main-title">
-
-                <!-- Shopping Cart Icon -->
-                <div class="shopping-cart">
-                    <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+                <img src="images/Happy-Cow-Bakery-Logo.png" alt="Happy Cow Bakery Logo" id="#main-title">
             </figure>
+
+            <!-- Shopping Cart Icon -->
+            <div class="shopping-cart">
+                <a target="_blank" href="/contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
 
             <!-- DESKTOP NAVIGATION  -->
             <ul class="menu">
-                <li><a href="#main-title">Home</a></li>
-                <li><a target="_blank" href="about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a target="_blank" href="#main-title">About Us</a></li>
                 <li><a target="_blank" href="contact.html">Contact Us</a></li>
             </ul>
 
@@ -42,20 +47,23 @@
             </div>
         </nav>
 
+        <!-- This is the hero banner -->
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 id="#main-title">Contact Us</h1>
+                <input type="search" placeholder="Search...">
+            </div>
+        </div>
+
     </header>
 
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1 id="main-title">Contact Us</h1>
-            <p>Your Bakery of Trust...</p>
-            <input type="search" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </div>
-
     <main>
-
         <section>
-            <table>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, accusantium reiciendis na
+                voluptatibus enim ducimus suscipit quibusdam, nostrum nesciunt earum repellendus expedita impedit
+                dolorum odio fugit, quasi esse laborum rerum!</p>
+
+            <table role="table">
                 <caption>Schedule</caption>
                 <thead>
                     <tr>
@@ -89,12 +97,10 @@
                         <td>9:00 AM - 6:00 PM</td>
                     </tr>
                 </tbody>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, accusantium reiciendis nam
-                    voluptatibus enim ducimus suscipit quibusdam, nostrum nesciunt earum repellendus expedita impedit
-                    dolorum odio fugit, quasi esse laborum rerum!</p>
             </table>
         </section>
+
+        <br>
 
         <section>
             <form role="form">
@@ -119,7 +125,9 @@
 
         <div>
             <h3>Need Support?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam laboriosam quasi facilis ullam facere itaque labore porro dolores. Accusantium inventore cum commodi impedit sed porro fuga! Numquam, magni labore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam laboriosam quasi facilis ullam
+                facere itaque labore porro dolores. Accusantium inventore cum commodi impedit sed porro fuga! Numquam,
+                magni labore?</p>
         </div>
     </main>
 
@@ -127,17 +135,17 @@
 
 <br>
 
-   <footer>
-        <p>&copy; Happy Cow Bakery, 2023</p>
-        <p>+1 613-888-5555</p>
-        <div class="footer-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-tiktok"></i>
-        </div>
+<footer>
+    <p>&copy; Happy Cow Bakery, 2023</p>
+    <p>+1 613-888-5555</p>
+    <div class="footer-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
 
-        <!-- BACK TO TOP BUTTON  -->
-        <a href="contact.html" class="back2top">Back to Top</a>
-    </footer>
+    <!-- BACK TO TOP BUTTON  -->
+    <a href="#main-title" class="back2top">Back to Top</a>
+</footer>
 
 </html>

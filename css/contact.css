@@ -1,20 +1,14 @@
-p {
-    font-family: Made Tommy Light;
-}
-
-
-body {
+html {
+    text-align: center;
+    scroll-behavior: smooth;
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box;
 }
 
-hr {
-    border: 1rem dashed grey;
-
-
+p {
+    font-family: Made Tommy Light;
 }
-
 
 img {
     max-width: 100%;
