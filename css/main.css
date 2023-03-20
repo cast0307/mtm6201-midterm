@@ -194,7 +194,7 @@ header {
 .hero-container {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/hero-banner.jpg");
+    background-image: url("/images/hero-banner.jpg");
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
