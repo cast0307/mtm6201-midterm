@@ -1,17 +1,17 @@
 /*Fonts from DaFont*/
 
 @font-face {
-    font-family: "BakeryRoastDemoRegular";
+    font-family:BakeryRoastDemoRegular;
     src: url("/fonts/BakeryRoastDemoRegular.ttf");
 }
 
 @font-face {
-    font-family: "Made Tommy Light";
+    font-family: Made Tommy Light;
     src: url("/fonts/MADE\ TOMMY\ Light_PERSONAL\ USE.otf");
 }
 
 @font-face {
-    font-family: "Made Tommy Regular";
+    font-family: Made Tommy Regular;
     src: url("/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf");
 }
 
@@ -196,7 +196,7 @@ main {
 .hero-container {
     display: flex;
     flex-direction: column;
-    background-image: url("/images/bakery.jpeg");
+    background-image: url("../images/bakery.jpeg");
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
